@@ -18,4 +18,36 @@
 #
 # Put a comment noting which class is the base class
 
-# initial push
+class Vehicle:
+    def __init__(self):
+        pass
+
+# base class Vehicle
+class FlightVehicle(Vehicle):
+    def __init__(self):
+        pass
+
+# base class Vehicle
+class GroundVehicle(Vehicle):
+    def __init__(self):
+        pass
+
+# base class FlightVehicle
+class Starship(FlightVehicle):
+    def __init__(self):
+        pass
+
+# base class FlightVehicle
+class Airplane(FlightVehicle):
+    def __init__(self):
+        pass
+
+#base class GroundVehicle
+class Car(GroundVehicle):
+    def __init__(self):
+        pass
+
+#base class GroundVehicle
+class Motorcycle(GroundVehicle):
+    def __init__(self):
+        pass

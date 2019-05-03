@@ -32,11 +32,10 @@ def cityreader(cities=[]):
 
     with open('cities.csv', 'r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
-        line_count = 0
+        first_row = 0
         for row in csv_reader:
-            if line_count == 0:
-                print(f'Column name: {", ".join(row)}')
-                line_count += 1
+            if first_row == 0:
+                first_row += 1
             else:
                 cities.append(City(str(row[0]), float(row[3]), float(row[4])))
         return cities
